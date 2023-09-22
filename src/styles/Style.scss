@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+@mixin flexCenter($flex-direction, $justify-content) {
+    display: flex;
+    align-items: center;
+    justify-content:$justify-content;
+    flex-direction:$flex-direction;
+}
+
+@mixin text-gradient{
+    background: rgb(161,244,229);
+    background: linear-gradient(90deg, rgba(161,244,229,1) 6%, rgba(41,255,191,1) 24%, rgba(135,48,223,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

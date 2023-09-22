@@ -1,0 +1,60 @@
+@import "./Style.scss";
+
+#home-container{
+    height:85vh;
+    background-image: url('/assets/backgrounds/llline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin-top: -50px;
+
+    .home-content{
+        position: relative;
+        top:250px;
+        padding: 100px;
+        @include flexCenter(column, center);
+        h4{
+            margin:0px;
+            color:white;
+            font-size:70px;
+        }
+        h3{
+            margin:0px;
+            @include text-gradient;
+            font-size:80px;
+            color:white;
+            font-weight:900;
+        }
+        
+
+    }
+}
+
+@media screen and (max-width: 480px){
+    #home-container{
+        height:100vh;
+        width:47vh;
+    
+        .home-content{
+            position: relative;
+            top:200px;
+            margin-left:-40px;
+            
+            @include flexCenter(column, center);
+            h4{
+                margin:0px;
+                color:white;
+                font-size:50px;
+            }
+            h3{
+                @include text-gradient;
+                margin:0px;
+                font-size:80px;
+                text-align:center;
+                color:white;
+                font-weight:900;
+            }
+        }
+    }
+
+}
