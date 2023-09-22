@@ -21,9 +21,10 @@ import Marquee from "react-fast-marquee";
 
 const Skills = () => {
   return (
-    <>
+
+    <div id="skill-container">
     <Marquee ><div id="skill-container-left" data-aos="slide-up">
-      {/* <h1 >SKILLS</h1> */}
+      <h1 >SKILLS</h1>
 
       <div className="logos">
         <div className="logo-container">
@@ -114,7 +115,8 @@ const Skills = () => {
         </div>
     </div>
 </Marquee>
-</>
+</div>
+
   )
 }
 

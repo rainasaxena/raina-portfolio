@@ -10,8 +10,29 @@
 }
 
 @mixin text-gradient{
-    background: rgb(161,244,229);
-    background: linear-gradient(90deg, rgba(161,244,229,1) 6%, rgba(41,255,191,1) 24%, rgba(135,48,223,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
+  background: linear-gradient(
+        to right,
+        #ffffff 30%,
+        #29ffbfda 40%,
+        #2970ff 50%,
+        #8730df 60%,
+        #000000 80%
+        );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            background-size: 500% auto;
+            animation: textShine 4s ease-in-out infinite alternate-reverse;
+
+}
+
+

@@ -22,10 +22,11 @@ const Navbar = () => {
     <div id='nav-container'>
         <div className="nav-lists">
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/#home-container">HOME</a></li>
                 <li><a href="/#about-container">ABOUT</a></li>
-                <li><a href="/#skill-container-left">SKILLS</a></li>
-                <li><a href="about.asp">About</a></li>
+                <li><a href="/#skill-container">SKILLS</a></li>
+                <li><a href="/#project-container">PROJECTS</a></li>
+                <li><a href="/#footer-container">CONTACT</a></li>
             </ul>
         </div>
     </div>
