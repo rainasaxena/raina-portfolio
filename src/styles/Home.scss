@@ -33,20 +33,7 @@
             font-size:80px;
             color:white;
             font-weight:900;
-            background: linear-gradient(
-            to right,
-            #ffffff 10%,
-            #29ffbfda 40%,
-            #2970ff 50%,
-            #8730df 60%,
-            #151515 80%
-            );
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-            background-size: 500% auto;
-            animation: textShine 4s ease-in-out infinite alternate;
+            @include text-gradient;
             }
         
 
