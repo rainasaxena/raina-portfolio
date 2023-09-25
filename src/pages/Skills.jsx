@@ -23,7 +23,7 @@ const Skills = () => {
   return (
 
     <div id="skill-container">
-    <Marquee ><div id="skill-container-left" data-aos="slide-up">
+    <Marquee ><div id="skill-container-left" data-aos="fade" >
       <h1 >SKILLS</h1>
 
       <div className="logos">
@@ -67,7 +67,7 @@ const Skills = () => {
         </Marquee>
 
 
-        <Marquee speed={50} direction={"right"} ><div id="skill-container-right" data-aos="slide-up">
+        <Marquee speed={50} direction={"right"} ><div id="skill-container-right" data-aos="fade">
         <h1 >SKILLS</h1>
         <div className="logos">
 

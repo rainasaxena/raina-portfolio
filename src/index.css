@@ -15,6 +15,8 @@ code {
 }
 
 
+@media screen and (min-width: 480px){
+
 .point-floating-1 {
   background-color: #29ffbf;
   height: 10px;
@@ -442,4 +444,5 @@ code {
   border-radius: 50%;
   z-index: 999;
   position: absolute
+}
 }

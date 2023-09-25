@@ -48,13 +48,7 @@ const Home = () => {
         return () => clearTimeout(timeout);
       }, [subIndex, index, reverse]);
 
-      // blinker
-      // useEffect(() => {
-      //   const timeout2 = setTimeout(() => {
-      //     setBlink((prev) => !prev);
-      //   }, 500);
-      //   return () => clearTimeout(timeout2);
-      // }, [blink]);
+
 
 
   return (

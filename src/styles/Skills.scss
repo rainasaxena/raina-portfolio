@@ -87,3 +87,57 @@
     }
   }
 }
+
+
+
+
+@media screen and (max-width: 480px){
+  #skill-container-left {
+    gap: 10px;
+    h1 {
+      font-size: 60px;
+    }
+  
+    .logos {
+      .logo-container {
+        @include flexCenter(column, center);
+        height: 70px;
+        width: 70px;
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+  }
+  
+  #skill-container-right {
+    gap: 10px;
+    h1 {
+      font-size: 60px;
+    }
+  
+    .logos {
+      .logo-container {
+        @include flexCenter(column, center);
+        height: 70px;
+        width: 70px;
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

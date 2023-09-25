@@ -41,51 +41,38 @@
 @media screen and (max-width: 480px) {
   #about-container {
     @include flexCenter(row, space-between);
-    // align-items:self-start;
-    height: 80vh;
-    width: 60vh;
     background-color: black;
-    background-image: url("/assets/backgrounds/line3.svg");
-    background-size: cover;
+    transition: 0.1s;
+    margin: 20px;
 
     .about-left {
-      margin-top: -350px;
-      @include flexCenter(column, center);
-      background-image: url("/assets/backgrounds/spill.svg");
-      height: 200px;
-      width: 180px;
-      position: relative;
-
-      left: 35px;
-      text-align: center;
-
-      h1 {
+      width: 380px;
+      // height:200px;
+      h4 {
         color: white;
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        // line-height: 130px;
       }
     }
 
+    hr {
+      height: 400px;
+      width: 2px;
+      background: white;
+    }
+
     .about-right {
-      margin-top: -350px;
-      position: relative;
-      right: 150px;
-      top: 150px;
-      background-size: 100%;
-
-      .about-right-container {
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 50px;
-        backdrop-filter: blur(20px);
-        height: 150px;
-        width: 350px;
-
-        h3 {
-          font-size: 12px;
-          padding: 40px;
-          color: white;
-          text-align: justify;
-        }
+      height:100px;
+      h1 {
+        padding:0px;
+        margin:0px;
+        transform: rotate(90deg);
+        font-size: 40px;
+        // text-align: center;
+        color: white;
+        @include text-gradient;
       }
     }
   }

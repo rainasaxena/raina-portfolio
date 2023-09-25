@@ -1,81 +1,169 @@
 @import "./Style.scss";
 
-#footer-container{
+#footer-container {
+  height: 200vh;
+  width: 100%;
+  @include flexCenter(row, center);
+  color: white;
+  .deets-content {
+    width: 800px;
+    @include flexCenter(column, center);
 
-    height:100vh;
-    width:100%;
-    @include flexCenter(row, center);
-    color:white;
-    .deets-content{
-        width:800px;
-        @include flexCenter(column, center);
-
-
-        h3{
-            font-size: 100px;
-            font-weight:900;
-            @include text-gradient;
-        }
-        
-        p{
-            text-align: center;
-            font-size: 20px;
-            font-weight:400;
-            line-height: 40px;
-        }
-
-
-        form{
-            @include flexCenter(column, center);
-            gap:10px;
-
-            .data{
-                @include flexCenter(row, center);
-                gap:30px;
-
-                label{
-                    width:90px;
-                    font-size: 18px;
-                    font-weight: 900;
-                }
-            }
-
-            
-
-            input, textarea{
-                background-color:rgb(73, 73, 73);
-                border:none;
-                text-align: center;
-                height:60px;
-                width:300px;
-                border-radius: 10px;
-            }
-        }
-
-        .send-email{
-            margin-top:30px;
-            padding:14px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 20px;
-            height:55px;
-            width:140px;
-            font-weight:700;
-            transition: 0.3s;
-            text-decoration-color: azure;
-            
-            &:hover{
-                box-shadow: 0px 0px 10px rgb(76, 76, 76);
-            }
-
-
-
-        }
-
-
-
-
-
+    h3 {
+      font-size: 100px;
+      font-weight: 900;
+      @include text-gradient;
     }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    form {
+      @include flexCenter(column, center);
+      gap: 10px;
+
+      .data {
+        @include flexCenter(row, center);
+        gap: 30px;
+
+        label {
+          width: 90px;
+          font-size: 18px;
+          font-weight: 900;
+        }
+      }
+
+      input,
+      textarea {
+        background-color: rgb(73, 73, 73);
+        border: none;
+        font-size: 20px;
+        text-align: center;
+        height: 60px;
+        color:white;
+        font-family: poppins;
+        width: 300px;
+        border-radius: 10px;
+      }
+    }
+
+    .send-email {
+      margin-top: 30px;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 20px;
+      height: 55px;
+      width: 140px;
+      font-weight: 700;
+      transition: 0.3s;
+      text-decoration-color: azure;
+
+      &:hover {
+        box-shadow: 0px 0px 10px rgb(76, 76, 76);
+      }
+    }
+
+    .socials{
+        @include flexCenter(row, center);
+        gap:50px;
+        .logo-container{
+
+            img{
+                width:80px;
+                height: 80px;
+            }
+        }
+    }
+  }
 }
 
+
+@media screen and (max-width: 480px){
+  #footer-container {
+    margin-top:500px;
+    margin-bottom: 0px;
+    height:80vh;
+    @include flexCenter(row, center);
+    color: white;
+    .deets-content {
+      margin:50px;
+      width: 500px;
+      @include flexCenter(column, center);
+  
+      h3 {
+        font-size: 48px;
+      }
+  
+      p {
+        font-size: 10px;
+        line-height: 20px;
+      }
+  
+      form {
+        @include flexCenter(column, center);
+        gap: 10px;
+  
+        .data {
+          @include flexCenter(row, center);
+          gap: 30px;
+  
+          label {
+            width: 90px;
+            font-size: 18px;
+            font-weight: 900;
+          }
+        }
+  
+        input,
+        textarea {
+          background-color: rgb(73, 73, 73);
+          border: none;
+          font-size: 10px;
+          text-align: center;
+          height: 40px;
+          color:white;
+          font-family: poppins;
+          width: 150px;
+          border-radius: 20px;
+        }
+      }
+  
+      .send-email {
+        margin-top: 30px;
+        padding: 8px 16px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 15px;
+        height: 44px;
+        width: 80px;
+        font-weight: 700;
+        transition: 0.3s;
+        text-decoration-color: azure;
+  
+        &:hover {
+          box-shadow: 0px 0px 10px rgb(76, 76, 76);
+        }
+      }
+  
+      .socials{
+          @include flexCenter(row, center);
+          gap:50px;
+          .logo-container{
+  
+              img{
+                  width:40px;
+                  height: 40px;
+              }
+          }
+      }
+    }
+ 
+  }
+
+
+}

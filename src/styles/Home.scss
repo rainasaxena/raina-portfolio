@@ -42,13 +42,12 @@
 
 @media screen and (max-width: 480px){
     #home-container{
-        height:100vh;
         width:47vh;
     
         .home-content{
             position: relative;
             top:200px;
-            margin-left:-40px;
+            margin-left:-20px;
             
             @include flexCenter(column, center);
             h4{
