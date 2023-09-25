@@ -23,7 +23,7 @@
         padding: 100px;
         @include flexCenter(column, center);
         h4{
-            margin:0px;
+            margin-top:0px;
             color:white;
             font-size:70px;
         }
@@ -42,8 +42,12 @@
 
 @media screen and (max-width: 480px){
     #home-container{
-        width:100vh;
-    
+        height:125vh;
+        width:425px;
+        background-image: url('/assets/backgrounds/llline.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+   
         .home-content{
             position: relative;
             top:200px;
@@ -51,14 +55,14 @@
             
             @include flexCenter(column, center);
             h4{
-                margin:0px;
+                margin-top:-80px;
                 color:white;
-                font-size:50px;
+                font-size:40px;
             }
             h3{
                 @include text-gradient;
                 margin:0px;
-                font-size:80px;
+                font-size:70px;
                 text-align:center;
                 color:white;
                 font-weight:900;

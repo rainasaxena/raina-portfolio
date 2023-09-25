@@ -2,7 +2,7 @@
 
 #about-container {
   @include flexCenter(row, space-between);
-  height: 100vh;
+  height: 170vh;
   background-color: black;
   transition: 0.1s;
   margin: 20px;
@@ -16,7 +16,6 @@
       font-size: 20px;
       font-weight: 400;
       text-align: center;
-      // line-height: 130px;
     }
   }
 
@@ -40,13 +39,14 @@
 
 @media screen and (max-width: 480px) {
   #about-container {
+    margin-top:200px;
     @include flexCenter(row, space-between);
     background-color: black;
     transition: 0.1s;
-    margin: 20px;
+    margin:20px;
 
     .about-left {
-      width: 380px;
+      width: 450px;
       // height:200px;
       h4 {
         color: white;
