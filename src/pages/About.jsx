@@ -25,8 +25,8 @@ I am excited about the opportunities that lie ahead, and I am always looking for
 
       <hr/>
 
-      <div className="about-right" data-aos="fade-right">
-        <h1>ABOUT ME</h1>
+      <div className="about-right" data-aos="fade">
+        <h1>ABOUT</h1>
       </div>
 
     </div>
