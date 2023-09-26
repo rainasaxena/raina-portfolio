@@ -34,20 +34,4 @@ nav.sticky{
 }
 
 
-@media screen and (max-width: 480px){
-    #nav-container {
-        height: 2.5rem;
-        width:22rem;
-        margin: 0px 10px;
-    
-        .nav-lists ul{
-            font-size:10px;
-            gap:25px;
-            margin-right:35px;
-            a{
-                color:white;
-                text-decoration: none;
-            }
-        }
-    }
-}
+
