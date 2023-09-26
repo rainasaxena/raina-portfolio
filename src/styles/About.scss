@@ -1,83 +1,48 @@
 @import "./Style.scss";
 
 #about-container {
-  @include flexCenter(row, space-between);
-  height: 170vh;
+  @include flexCenter(column, center);
+  height: 100vh;
   background-color: black;
   transition: 0.1s;
-  margin: 20px;
+  margin: 40px;
 
-  .about-left {
-    width: 800px;
-    h4 {
-      padding: 20px;
-      margin-top: 100px;
-      color: white;
-      font-size: 20px;
-      font-weight: 400;
+  .about-up {
+    h1 {
+      font-size: 100px;
       text-align: center;
+      @include text-gradient;
     }
   }
 
-  hr {
-    height: 450px;
-    width: 2px;
-    background: white;
-  }
-
-  .about-right {
-    h1 {
-      transform: rotate(90deg);
-      font-size: 100px;
+  .about-down {
+    h4 {
+      // transform: rotate(0deg);
+      font-size: 20px;
       text-align: center;
-      padding: 40px;
       color: white;
-      @include text-gradient;
     }
   }
 }
 
 
-@media screen and (max-width: 480px){
-
-  #about-container {
-    @include flexCenter(row, space-between);
-    width:100vw;
-    background-color: black;
-    transition: 0.1s;
-    margin: 20px;
-  
-    .about-left {
-      width: 800px;
-      h4 {
-        padding: 20px;
-        margin-top: 100px;
-        color: white;
-        font-size: 10px;
-        font-weight: 400;
-        text-align: center;
+@media screen and (max-width: 600px) {
+  #about-container{
+    align-items: center;
+    
+    .about-up{
+      
+      h1{
+        font-size:60px;
       }
     }
-  
-    hr {
-      height: 450px;
-      width: 2px;
-      background: white;
-    }
-  
-    .about-right {
-      h1 {
-        transform: rotate(90deg);
-        font-size: 40px;
-        text-align: center;
-        padding: 0px;
-        color: white;
-        @include text-gradient;
+
+    .about-down{
+      h4{
+        font-size:10px;
       }
     }
   }
-  
-  
 }
 
  

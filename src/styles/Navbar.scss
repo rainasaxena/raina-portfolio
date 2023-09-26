@@ -34,4 +34,16 @@ nav.sticky{
 }
 
 
-
+@media screen and (max-width: 600px){
+    #nav-container{
+        background-color: rgba(165, 159, 159, 0.15);  
+        height:3rem;
+        width:25rem;
+        align-items: center;
+        .nav-lists ul{
+            align-items: center;
+            font-size:0.7rem;
+            gap:1.5rem;
+        }
+    }
+}

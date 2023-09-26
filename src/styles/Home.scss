@@ -25,26 +25,26 @@
             font-size:80px;
             color:white;
             font-weight:900;
-            @include text-gradient;
             }
         
 
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     #home-container {
+      background:none;
+
       .home-content {
-        padding: 50px; /* Adjust padding for smaller screens */
+        padding: 60px; /* Adjust padding for smaller screens */
         top: 150px; /* Adjust top position for smaller screens */
+        h4 {
+          font-size: 3rem; /* Adjust font size for smaller screens */
+        }
+        h3 {
+          font-size: 5rem; /* Adjust font size for smaller screens */
+          text-align: center;
+        }
       }
-  
-      h4 {
-        font-size: 10px; /* Adjust font size for smaller screens */
-      }
-  
-      h3 {
-        font-size: 50px; /* Adjust font size for smaller screens */
-      }
-    }
+  }
   }

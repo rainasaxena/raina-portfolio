@@ -92,54 +92,97 @@
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
+
+  #skill-container {
+    margin-bottom:50px;
+    @include flexCenter(column, center);
+  }
+  
   #skill-container-left {
-    width:100vh;
-    gap: 10px;
+    margin-top:150px;
+    overflow: hidden;
+    white-space: nowrap;
+    @include flexCenter(row, center);
+    gap: 50px;
     h1 {
-      font-size: 60px;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      @include text-gradient;
     }
   
     .logos {
+      @include flexCenter(row, center);
+  
       .logo-container {
         @include flexCenter(column, center);
-        height: 70px;
-        width: 70px;
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.194);
+        border-radius: 100px;
+        height: 80px;
+        width: 80px;
+        justify-content: center;
+  
         img {
-          height: 60px;
-          width: 60px;
+          height: 50px;
+          width: 50px;
+          transition: 0.2s;
+        }
+  
+        &:hover {
+          img {
+            transform: translateY(-10px);
+          }
         }
       }
     }
   }
   
   #skill-container-right {
-    gap: 10px;
+    margin-top: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    column-gap: 50px;
+    height: 150px;
+    @include flexCenter(row, center);
     h1 {
-      font-size: 60px;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+  
+      margin: 0px;
+      padding: 0px;
+      @include text-gradient;
     }
   
     .logos {
+      @include flexCenter(row, center);
+  
       .logo-container {
         @include flexCenter(column, center);
-        height: 70px;
-        width: 70px;
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.194);
+        border-radius: 100px;
+        height: 80px;
+        width: 80px;
+        justify-content: center;
+  
         img {
-          height: 60px;
-          width: 60px;
+          height: 50px;
+          width: 50px;
+          transition: 0.2s;
+        }
+  
+        &:hover {
+          img {
+            transform: translateY(-10px);
+          }
         }
       }
     }
   }
-
-
-
-
-
-
-
-
-
-
+  
+  
 
 }

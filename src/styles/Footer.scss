@@ -83,9 +83,8 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
   #footer-container {
-    margin-top:500px;
     margin-bottom: 0px;
     height:80vh;
     @include flexCenter(row, center);
