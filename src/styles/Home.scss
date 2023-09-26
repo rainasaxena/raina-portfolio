@@ -42,7 +42,8 @@
 
 @media screen and (max-width: 480px){
     #home-container{
-        height:125vh;
+        height: 100vh;
+        width: 65vh;
         background-image: url('/assets/backgrounds/llline.svg');
         background-repeat: no-repeat;
         background-size: cover;
