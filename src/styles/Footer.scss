@@ -1,7 +1,7 @@
 @import "./Style.scss";
 
 #footer-container {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   @include flexCenter(row, center);
   color: white;
