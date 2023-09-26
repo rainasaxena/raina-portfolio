@@ -43,6 +43,7 @@
   #about-container {
     @include flexCenter(row, space-between);
     height: 170vh;
+    width:100vh;
     background-color: black;
     transition: 0.1s;
     margin: 20px;

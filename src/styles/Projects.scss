@@ -123,6 +123,7 @@
 
 @media screen and (max-width: 480px){
   #project-container{
+    width:100vh;
     height:150vh;
     flex-wrap:wrap;
     margin: 20px;
