@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
   return (
-    <section id='portfolio'>
+    <section id='portfolio' data-aos="fade">
       <h5>PROJECTS</h5>
 
       <div className="container portfolio__container">
