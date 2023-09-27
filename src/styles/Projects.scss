@@ -2,11 +2,13 @@
 
 
 .portfolio__container{
-
+  margin-bottom:100px;
+  margin-top:50px;
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap:2.5rem;
-  padding:50px;
+  grid-template-columns: repeat(3,1fr);
+  gap:1.5rem;
+  padding:20px;
+  margin-left:100px;
 
   .portfolio__item{
     background: linear-gradient(

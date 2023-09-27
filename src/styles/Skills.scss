@@ -1,7 +1,7 @@
 @import "./Style.scss";
 
 #skill-container {
-  margin-top:-200px;
+  margin-top:100px;
   margin-bottom:200px;
   @include flexCenter(column, center);
 }

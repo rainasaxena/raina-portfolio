@@ -19,23 +19,23 @@ const Projects = () => {
           <div className="portfolio__item-image">
             <img src={jcg} alt="" />
           </div>
-          <h3>Project Title</h3>
-          <a href="/" className="btn" target="blank">Live Demo</a>
+          <h3>SEO-R&D : Jio Cloud Gaming</h3>
+          <a href="https://cloudplay.jiogames.com" className="btn" target="blank">Live Demo</a>
         </article>
 
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={nike} alt="" />
           </div>
-          <h3>Project Title</h3>
-          <a href="/" className="btn" target="blank">Live Demo</a>
+          <h3>Nike Clone</h3>
+          <a href="https://nike-store-taupe.vercel.app/" className="btn" target="blank">Live Demo</a>
         </article>
 
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={weather} alt="" />
           </div>
-          <h3>Project Title</h3>
+          <h3>WeatherScape</h3>
           <a href="/" className="btn" target="blank">Live Demo</a>
         </article>
 
@@ -43,8 +43,8 @@ const Projects = () => {
           <div className="portfolio__item-image">
             <img src={rachit} alt="" />
           </div>
-          <h3>Project Title</h3>
-          <a href="/" className="btn" target="blank">Live Demo</a>
+          <h3>Architect Portfolio</h3>
+          <a href="https://react-portfolio-smoky-one.vercel.app/" className="btn" target="blank">Live Demo</a>
         </article>
       </div>
     </section>
